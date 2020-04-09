@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256mmgLKCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Weight Converter</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-10 col-sm-10 col-md-8 col-lg-6">
+          <h1 class="display-4 text-center mb-3">
+            <span class="text-warning"
+              ><i class="fas fa-balance-scale"></i> Weight</span
+            >
+            Converter
+          </h1>
+          <form class="">
+            <div class="justify-content-center form-group row">
+              <select
+                id="activitySel"
+                class="mr-1 col-5 btn btn-warning"
+                name=""
+                id=""
+              >
+                <option value="pounds">Pounds</option>
+                <option id="" value="grams">Grams</option>
+                <option id="" value="kilograms">Kilograms</option>
+                <option id="" value="ounces">Ounces</option>
+                <option id="" value="tonne">Tonne</option>
+                <option id="" value="stone">Stone</option>
+              </select>
+              <input
+                id="lbsInput"
+                type="number"
+                class="col-5 ml-1 form-control form-control-lg"
+                placeholder="Pound..."
+              />
+            </div>
+          </form>
+          <div id="output" class="overflow">
+            <div id="position" class="card card-header bg-primary position">
+              <div>
+                <h4 id="change"></h4>
+                <div id="gramsOutput"></div>
+              </div>
+            </div>
+            <div
+              id="position1"
+              class="card card-header my-2 bg-success position"
+            >
+              <div>
+                <h4 id="change1"></h4>
+                <div id="kgOutput"></div>
+              </div>
+            </div>
+            <div
+              id="position2"
+              class="card card-header bg-danger mb-2 position"
+            >
+              <div>
+                <h4 id="change2"></h4>
+                <div id="ozOutput"></div>
+              </div>
+            </div>
+            <div id="position3" class="card-header card bg-info mb-2 position">
+              <div>
+                <h4 id="change3"></h4>
+                <div id="tnOutput"></div>
+              </div>
+            </div>
+            <div
+              id="position4"
+              class="card-header card bg-warning text-light mb-5 position"
+            >
+              <div>
+                <h4 id="change4"></h4>
+                <div id="stOutput"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="text-warning">Developer </span>: Ehtisham Safeer &copy; 2020
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
